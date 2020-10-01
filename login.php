@@ -62,7 +62,7 @@ if (isset($_POST['login'])) {
                 <span class="badge badge-danger">
                     <?php if (isset($_GET['pesan'])) {
             if ($_GET['pesan'] == "gagal") {
-              echo "Login gagal! username dan password salah!";
+              echo "Login gagal! Periksa kembeli uname atau passwd";
             }
           }
           ?>
