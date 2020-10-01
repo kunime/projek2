@@ -152,12 +152,6 @@ $db = new database();
     </div><br>
 
 
-    <!-- <footer id="sticky-footer" class="py-1  text-black-15" style="background-color: #6a99ff">
-    <div class="container text-center">
-      <h6>Copyright All Rights Reserve by SRIKANDI :) :*</h6>
-    </div>
-  </footer> -->
-
 
 
     <!-- Optional JavaScript -->
