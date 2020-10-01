@@ -23,7 +23,7 @@ $db = new database();
     <title>DINAS PERDAGANGAN KABUPATEN KEDIRI</title>
 </head>
 
-<body style="background-color :#e4f2f2">
+<body style="background-color :#FFF">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #6a99ff">
@@ -73,7 +73,7 @@ $db = new database();
     <!-- jumbotron dan tabel tampil  -->
     <div class="jumbotron pr-5 pl-10" style="background-color :#e4f2f2">
         <center>
-            <h3>DATA INDUSTRI KABUPATEN KEDIRI</h3>
+            <h3>DATA INDUSTRI </h3>
         </center><br>
         <div class="container">
             <table id="listdata" class="table table-striped table-bordered" style="color: black;">
