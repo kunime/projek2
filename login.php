@@ -1,4 +1,34 @@
 <!-- disini butuh koneksi -->
+<?php
+session_start();
+include_once 'koneksi.php';
+$database = new database();
+
+if (isset($_SESSION['is_login'])) {
+  header('location:admin.php');
+}
+
+if (isset($_COOKIE['username'])) {
+  $database->relogin($_COOKIE['username']);
+  header('location:admin.php');
+}
+
+if (isset($_POST['login'])) {
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+  if (isset($_POST['remember'])) {
+    $remember = true;
+  } else {
+    $remember = false;
+  }
+
+  if ($database->login($username, $password, $remember)) {
+    header('location:admin.php');
+  }
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
