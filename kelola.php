@@ -1,5 +1,9 @@
 <!doctype html>
 <!-- disini butuh koneksi -->
+<?php
+include 'koneksi.php';
+$db = new database();
+?>
 
 <html lang="en">
 
