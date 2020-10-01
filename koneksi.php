@@ -2,6 +2,11 @@
 class database
 {
     // disini butuh host
+    public $host = "localhost",
+$username = "root",
+$pass = "",
+$db = "pkl",
+$koneksi;
     public function __construct()
     {
         $this->koneksi = new mysqli($this->host, $this->username, $this->pass, $this->db);
