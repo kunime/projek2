@@ -94,6 +94,23 @@ $db = new database();
 
                 <!-- Tampil -->
                 <!-- disini butuh tbody -->
+		    <tbody>
+    <?php
+					foreach ($db->tampil_data(['data']) as $data) { ?>
+    <tr>
+        <td> <?php echo $data['nama']; ?> </td>
+        <td> <?php echo $data['namaind']; ?> </td>
+        <td> <?php echo $data['namaproduk']; ?> </td>
+        <td> <?php echo $data['tahun']; ?> </td>
+        <td> <?php echo $data['pendthn']; ?> </td>
+        <td> <?php echo $data['inthn']; ?> </td>
+        <td> <?php echo $data['pekerja']; ?> </td>
+        <td> <?php echo $data['alamatind']; ?> </td>
+        <td> <?php echo $data['sosmed']; ?> </td>
+        <td> <?php echo $data['namakec']; ?> </td>
+    </tr>
+    <?php } ?>
+</tbody>
             </table>
         </div>
     </div>
