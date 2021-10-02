@@ -11,7 +11,7 @@ $.ajax({url: sf, type: 'GET', dataType: 'text'})
             console.log(rows);
             rows.forEach(p => {
                 const card =
-                    `<div class="card border-0" style="display: inline-block;  margin: 0;">
+                    `<div class="card" style="display: inline-block;">
                          <img src="${p[2]}" class="card-img-top img-fluid" style=" padding-left:1rem; padding-right:1rem;"/>
                         <div class="card-body">
                                 <h5 class="card-title">${p[0]}</h5>
@@ -19,7 +19,7 @@ $.ajax({url: sf, type: 'GET', dataType: 'text'})
                                 <p class="card-text"> ${p[1]}</p>
                                     <p class="fs-6" style="margin-top:3rem;"><b>${p[3]}</b></p>
                                 <div class="d-grid gap-2">
-                                <a class="btn btn-danger">DETAIL PRODUK</a>
+                                <a class="btn btn-danger">ADD TO CART</a>
                                 </div>
                         </div>
                         </div>`
