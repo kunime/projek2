@@ -53,9 +53,11 @@
     <div class="container py-3">
         <div class="row col-lg-10 mx-auto">
             <div class="col-md-4 py-3">
+            {{-- card--}}
                 <div id="cardku">
-
+                   {{-- this card from import --}}
                 </div>
+            {{-- end card--}}
             </div>
         </div>
     </div>
